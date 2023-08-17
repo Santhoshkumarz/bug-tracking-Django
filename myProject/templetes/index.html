@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'Css/style.css'%}">
+</head>
+<body>
+
+  <h1>ADD RECORD</h1>
+
+
+  
+
+
+<hr>
+
+<h1>DATA FETCHING</h1>
+   <!-- Retraving Data-->
+   <table border="1" >
+    <tr>
+      <th>S.No </th>
+      <th> Name </th>
+      <th> Age </th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Update</th>
+    </tr>
+    <tr>
+      {%for x in alldata %}
+      <td>{{x.id}}</td>
+      <td>{{x.Name}}</td>
+      <td>{{x.Age}}</td>
+      <td>{{x.Email}}</td>
+      <td>{{x.Phone}}</td>
+      <td><a href="update/{{x.id}}">Update</a></td>
+    </tr>
+      {%endfor%}
+    
+   </table>
+
+  
+
+
+<a href="add/">Add Record</a>
+
+</body>
+</html>

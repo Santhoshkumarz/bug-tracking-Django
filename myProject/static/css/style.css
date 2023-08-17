@@ -1,0 +1,19 @@
+h1{
+    color: rgb(94, 21, 190);
+    text-align: center;
+}
+body{
+    background-color: rgb(189, 189, 228);
+}
+
+.star{
+    color: red;
+   
+}
+.btn{
+    position: relative;
+    left: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 10px;
+}
